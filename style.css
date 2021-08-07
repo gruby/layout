@@ -1,0 +1,233 @@
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #dddddd;
+}
+
+a {
+  color: #000;
+}
+
+/* header */
+
+.header {
+  background-color: #fff;
+  box-shadow: 1px 8px 8px 0 rgba(0,0,0,.1);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  border-right: 1px solid #f4f4f4;
+  text-decoration: none;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #dddddd;
+}
+
+.header img {
+  display: block;
+  float: left;
+  border: 2px solid #dddddd;
+}
+
+/* menu */
+
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  /* display: inline-block; */
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 540px;
+  /* max-height: 240px; */
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* Spacer under the fixed upper menu belt
+ */
+#spacer {
+  height: 80px;
+  width: 100%;
+  /* background-color: khaki; */
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 10px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+/* =========== MAIN ============== */
+
+.main {
+  background-color: #dddddd;
+  border-radius: 10px;
+  margin: 0px 10px 50px 10px;
+  min-height: 800px;
+  position: relative;
+}
+
+.main .three_left_column {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  float: left;
+  padding: 10px;
+  width: 33.33%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.main .three_centre_column {
+  background-color: rgb(124, 124, 124);
+  border-radius: 10px;
+  border: solid 10px black;
+  display: inline-block;
+  padding: 10px;  
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+.main .three_right_column {
+  background-color: rgb(255, 0, 0);
+  border-radius: 10px;
+  float: right;
+  padding: 10px;
+  width: 33.33%;
+  box-sizing: border-box;
+}
+
+.main .two_left_column {
+  background-color: white;
+  border-radius: 10px;
+  border: solid 1px black;
+  width: 50%;
+  float: left;
+  padding: 10px; 
+  box-sizing: border-box;
+}
+
+.main .two_right_column {
+  background-color: white;
+  border-radius: 10px;
+  border: solid 1px black;
+  width: 50%;
+  float: right;
+  padding: 10px; 
+  box-sizing: border-box;
+}
+
+.item {
+  float: left;
+  margin: 5px;
+  margin-bottom: 30px;
+  background-color: white;
+  border-radius: 10px;
+  width: 170px;
+  min-height: 280px;
+  border: 1px solid black;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  min-height: 200px;
+  box-shadow: 1px -8px 8px 0 rgba(0,0,0,.1);
+  margin-top: 50px;
+}
