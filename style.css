@@ -8,7 +8,7 @@ a {
 }
 
 p {
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
 
 /* header */
@@ -30,10 +30,12 @@ p {
 }
 
 .header li a {
+  font-size: 3vh;
   display: block;
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
+  line-height: 10vh;
 }
 
 .header li a:hover,
@@ -125,7 +127,7 @@ p {
 /* Spacer under the fixed upper menu belt
  */
 #spacer {
-  height: 80px;
+  height: 18vh;
   width: 100%;
   /* background-color: khaki; */
 }
@@ -155,7 +157,7 @@ p {
   background-color: #dddddd;
   border-radius: 10px;
   margin: 0px 1vw 5vw 1vw;
-  min-height: 800px;
+  min-height: 70vh;
   position: relative;
 }
 
@@ -172,7 +174,7 @@ p {
 .main .three_centre_column {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
-  border: solid 1px black;
+  /* border: solid 1px black; */
   display: inline-block;
   padding: 10px;  
   width: 33.33%;
@@ -220,8 +222,9 @@ p {
   background-color: white;
   border-radius: 10px;
   /* width: 170px; */
-  width: 12vw;
-  min-height: 25vw;
+  width: 15vw;
+  height: 25vw;
+  overflow: hidden;
   border: 1px solid black;
   font-size: 12px;
   text-align: center;
@@ -229,7 +232,7 @@ p {
 }
 
 .item img {
-  width: 12vw;
+  width: 15vw;
 }
 
 .item p {
