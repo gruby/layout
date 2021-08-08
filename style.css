@@ -30,12 +30,12 @@ p {
 }
 
 .header li a {
-  font-size: 3vh;
+  font-size: 1.5vw;
   display: block;
   padding: 20px 20px;
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
-  line-height: 10vh;
+  /* line-height: 10vh; */
 }
 
 .header li a:hover,
@@ -103,7 +103,7 @@ p {
 }
 
 .header .menu-btn:checked ~ .menu {
-  max-height: 540px;
+  max-height: 600px;
   /* max-height: 240px; */
 }
 
