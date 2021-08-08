@@ -208,6 +208,10 @@ p {
   box-sizing: border-box;
 }
 
+.main .one_column {
+  width: 100%;
+}
+
 .item {
   box-shadow: 3px 8px 8px 0 rgba(0, 0, 0, 0.1);
   float: left;
@@ -226,6 +230,10 @@ p {
 
 .item img {
   width: 9vw;
+}
+
+.item p {
+  font-size: 0.7vw;
 }
 
 .row:after {
