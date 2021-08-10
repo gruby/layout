@@ -11,6 +11,16 @@ p {
   font-size: 1.5vw;
 }
 
+textarea {
+  width: 95%;
+  max-width: 95%;
+  height: 95%;
+  max-height: 95%;
+  overflow: scroll;
+  resize: none;
+  font-size: 1.2vw;
+}
+
 /* header */
 
 .header {
@@ -127,29 +137,12 @@ p {
 /* Spacer under the fixed upper menu belt
  */
 #spacer {
-  height: 18vh;
+  height: 70px;
   width: 100%;
   /* background-color: khaki; */
 }
 
 /* 48em = 768px */
-
-@media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
-  .header li a {
-    padding: 20px 10px;
-  }
-  .header .menu {
-    clear: none;
-    float: right;
-    max-height: none;
-  }
-  .header .menu-icon {
-    display: none;
-  }
-}
 
 /* =========== MAIN ============== */
 
@@ -157,7 +150,7 @@ p {
   background-color: #dddddd;
   border-radius: 10px;
   margin: 0px 1vw 5vw 1vw;
-  min-height: 70vh;
+  min-height: 80vh;
   position: relative;
 }
 
@@ -201,18 +194,21 @@ p {
   border-radius: 10px;
   border: solid 1px black;
   width: 50%;
+  height: 70vh;
   float: left;
-  padding: 10px; 
+  padding: 0.5vw; 
   box-sizing: border-box;
 }
+
 
 .main .two_right_column {
   background-color: white;
   border-radius: 10px;
   border: solid 1px black;
   width: 50%;
+  height: 70vh;
   float: right;
-  padding: 10px; 
+  padding: 0.5vw; 
   box-sizing: border-box;
 }
 
@@ -226,7 +222,7 @@ p {
   margin: 0.4vw;
   margin-bottom: 1vw;
   background-color: white;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   /* width: 170px; */
   width: 15vw;
   height: 25vw;
@@ -259,3 +255,39 @@ p {
   box-shadow: 1px -8px 8px 0 rgba(0,0,0,.1);
   margin-top: 50px;
 }
+
+/* STYLES FOR BIG SCREEN */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 10px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+  .item {
+    box-shadow: 3px 8px 8px 0 rgba(0, 0, 0, 0.1);
+    float: left;
+/*     margin: 0.4vw;
+    margin-bottom: 1vw; */
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    /* width: 170px; */
+    width: 15vw;
+    height: 25vw;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    font-size: 12px;
+    text-align: center;
+    padding-top: 5px;
+  }
+}
+
