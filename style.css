@@ -18,7 +18,7 @@ textarea {
   max-height: 95%;
   overflow: scroll;
   resize: none;
-  font-size: 1.2vw;
+  font-size: 1vw;
 }
 
 /* header */
@@ -137,7 +137,7 @@ textarea {
 /* Spacer under the fixed upper menu belt
  */
 #spacer {
-  height: 70px;
+  height: 75px;
   width: 100%;
   /* background-color: khaki; */
 }
